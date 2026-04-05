@@ -1,4 +1,4 @@
-/* PORTFOLIO
+/*
    Colour palette: Lilac, Light Grey, White
    Typography: Playfair Display (headings) + DM Sans (body)
 */
@@ -825,4 +825,70 @@ h1, h2, h3, h4 {
 @media (max-width: 420px) {
   .skills-grid { grid-template-columns: 1fr; }
   .hobbies-grid { grid-template-columns: 1fr; }
+}
+
+/* 3D LILAC CURSOR */
+
+/* Hide default cursor everywhere */
+*, *::before, *::after { cursor: none !important; }
+
+/* Small solid dot */
+#cursor-dot {
+  position: fixed;
+  top: 0; left: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--lilac-deep);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background 0.2s ease, width 0.2s ease, height 0.2s ease;
+  box-shadow:
+    0 0 6px rgba(124, 92, 191, 0.8),
+    0 0 12px rgba(124, 92, 191, 0.4);
+}
+
+/* Outer ring */
+#cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--lilac-mid);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.12s ease, width 0.25s ease, height 0.25s ease, border-color 0.2s ease, opacity 0.2s ease;
+  box-shadow:
+    0 0 10px rgba(176, 154, 212, 0.3),
+    inset 0 0 10px rgba(176, 154, 212, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+/* Hover effect */
+body.cursor-hover #cursor-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--lilac);
+  box-shadow:
+    0 0 10px rgba(200, 180, 232, 1),
+    0 0 20px rgba(200, 180, 232, 0.6),
+    0 0 40px rgba(200, 180, 232, 0.3);
+}
+
+body.cursor-hover #cursor-ring {
+  width: 52px;
+  height: 52px;
+  border-color: var(--lilac);
+  opacity: 0.7;
+}
+
+/* Click effect */
+body.cursor-click #cursor-ring {
+  width: 24px;
+  height: 24px;
+  border-color: var(--lilac-deep);
+  opacity: 1;
 }

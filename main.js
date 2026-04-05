@@ -151,3 +151,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+// Ring lags behind mouse creating 3D
+function animateRing() {
+  ringX += (mouseX - ringX) * 0.12;
+  ringY += (mouseY - ringY) * 0.12;
+
+  cursorRing.style.left = ringX + 'px';
+  cursorRing.style.top  = ringY + 'px';
+
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+// Hover effect
+const hoverTargets = 'a, button, input, textarea, [role="button"]';
+
+document.querySelectorAll(hoverTargets).forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+});
+
+// Click effect
+window.addEventListener('mousedown', () => document.body.classList.add('cursor-click'));
+window.addEventListener('mouseup',   () => document.body.classList.remove('cursor-click'));
+
+// Hide cursor when mouse leaves the window
+document.addEventListener('mouseleave', () => {
+  cursorDot.style.opacity  = '0';
+  cursorRing.style.opacity = '0';
+});
+document.addEventListener('mouseenter', () => {
+  cursorDot.style.opacity  = '1';
+  cursorRing.style.opacity = '1';
+});

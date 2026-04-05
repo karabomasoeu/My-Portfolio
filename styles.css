@@ -892,3 +892,32 @@ body.cursor-click #cursor-ring {
   border-color: var(--lilac-deep);
   opacity: 1;
 }
+
+/* SCROLLBAR */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b0b0be transparent;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* The track fully transparent */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* The moving thumb, visible */
+::-webkit-scrollbar-thumb {
+  background: #b0b0be;
+  border-radius: 50px;
+}
+
+/* Slightly darker on hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: #9090a0;
+}

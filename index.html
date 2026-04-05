@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karabo Masoeu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://kit.fontawesome.com/f9df69224c.jss" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        media="print" onload="this.media='all'" />
+</head>
+<body>
+
+  <!-- NAV  -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">KM<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Karabo Masoeu<span class="dot">.</span></h1>
+      <p class="hero-tagline">Frontend Developer &amp; Aspiring UX/UI Designer</p>
+      <p class="hero-sub">I create clean, user-centred digital experiences with a foundation in Python and a growing love for the web.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="/images/78500285.jpg" alt="Profile photo" />
+      </div>
+    </div>
+  </section>
+
+  <!--  ABOUT -->
+  <section class="section about" id="about">
+    <div class="container two-col">
+      <div class="about-text fade-in">
+        <span class="section-label">About Me</span>
+        <h2>Developer by practice,<br/> Designer by intention.</h2>
+        <p>I'm an aspiring frontend developer with solid Python skills, currently expanding my toolkit with Node.js and Java. I'm on a deliberate path toward becoming a frontend developer and UX/UI designer 
+            blending technical depth with a genuine understanding of how people think and interact with products.</p>
+        <p>I believe great digital products are born at the intersection of clean code, intentional design, and empathy for the user. Every project I work on is 
+            an opportunity to apply these principles.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">UX/UI</span>
+            <span class="stat-label">Design</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">...</span>
+            <span class="stat-label">...</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-aside fade-in">
+        <div class="about-card">
+          <h4>Currently Learning</h4>
+          <ul class="learning-list">
+            <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+            <li><i class="fa-brands fa-java"></i> Java</li>
+            <li><i class="fa-solid fa-pen-ruler"></i> UX/UI Design Principles</li>
+            <li><i class="fa-solid fa-mobile-screen"></i> Responsive & Accessible Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <span class="section-label center">What I Bring</span>
+      <h2 class="center">Skills</h2>
+      <p class="section-intro center">A growing set of technical and design skills, shaped by curiosity and real-world practice.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python</h3>
+          <p>My strongest programming language — used for scripting, automation, data handling, and backend logic.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Writing semantic, accessible markup and crafting pixel-precise, responsive layouts.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>Building interactive, dynamic interfaces with modern vanilla JS.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="45%"></div></div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+          <h3>Node.js <span class="badge">Learning</span></h3>
+          <p>Exploring server-side JavaScript — understanding how the full stack connects.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="10%"></div></div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+          <h3>Java <span class="badge">Learning</span></h3>
+          <p>Building a foundation in object-oriented programming and software design patterns.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="15%"></div></div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>UX/UI Design</h3>
+          <p>Applying wireframing, user flows, and design system thinking to create intuitive interfaces.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Building interfaces that look great on every screen — from mobile to widescreen.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <span class="section-label center">My Work</span>
+      <h2 class="center">Projects</h2>
+      <p class="section-intro center">A showcase of things I've built, designed, and shipped. More coming soon.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card fade-in">
+          <div class="project-img">
+            <img src="https://placehold.co/600x360/e8ddf5/7c5cbf?text=Project+One" alt="Project One" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm" target="_blank">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Tool</span>
+              <span class="tag">Tool</span>
+            </div>
+            <h3>Project One</h3>
+            <p>Project Description.</p>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-img">
+            <img src="https://placehold.co/600x360/e8ddf5/7c5cbf?text=Project+Two" alt="Project 1" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm" target="_blank">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Tool</span>
+              <span class="tag">Tool</span>
+            </div>
+            <h3>Project Two</h3>
+            <p>Project Description.</p>
+          </div>
+        </article>
+
+        <article class="project-card project-card--soon fade-in">
+          <div class="project-img project-img--soon">
+            <div class="coming-soon-badge"><i class="fa-solid fa-hourglass-half"></i><span>Coming Soon</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Tool</span>
+              <span class="tag">In Progress</span>
+            </div>
+            <h3>Next Project</h3>
+            <p>Something exciting in the works. I'm building this one as I grow my Node.js skills.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section class="section hobbies" id="hobbies">
+    <div class="container">
+      <span class="section-label center">Get To Know Me</span>
+      <h2 class="center">Hobbies &amp; Interests</h2>
+      <p class="section-intro center">The things that recharge me and secretly make me a better designer and developer.</p>
+
+      <div class="hobbies-grid">
+        <div class="hobby-card fade-in">
+          <div class="hobby-icon"><i class="fa-solid fa-music"></i></div>
+          <h4>My Hobby</h4>
+          <p>About hobby.</p>
+        </div>
+        <div class="hobby-card fade-in">
+          <div class="hobby-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h4>My Hobby</h4>
+          <p>About hobby.</p>
+        </div>
+        <div class="hobby-card fade-in">
+          <div class="hobby-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h4>Web Development</h4>
+          <p>About hobby.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container two-col contact-inner">
+
+      <div class="contact-info fade-in">
+        <span class="section-label">Say Hello</span>
+        <h2>Let's Work Together</h2>
+        <p>Whether you have a project idea, a question, or just want to connect — my inbox is open. I'm always happy to chat about design, code, and everything in between.</p>
+
+        <ul class="contact-details">
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:youremail@example.com">kbmasoeu@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+             <a href="tel:+27000000000">+27 72 556 4978</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Johannesburg, South Africa</span>
+          </li>
+        </ul>
+
+        <div class="social-links">
+          <a href="https://github.com/karabomasoeu/karabomasoeu" class="social-link" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/karabo-masoeu-26744037b/" class="social-link" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/kbmasoeu" class="social-link" aria-label="Twitter / X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <!-- <a href="#" class="social-link" aria-label="Dribbble" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="#" class="social-link" aria-label="Behance" target="_blank"><i class="fa-brands fa-behance"></i></a> -->
+        </div>
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER  -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Karabo Masoeu<span class="dot">.</span></p>
+      <p class="footer-copy">© <span id="year"></span> Designed &amp; built with love.</p>
+      <div class="footer-social">
+        <a href="https://github.com/karabomasoeu/karabomasoeu" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/karabo-masoeu-26744037b/" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/kbmasoeu" aria-label="Twitter / X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

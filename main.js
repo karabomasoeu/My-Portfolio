@@ -77,7 +77,7 @@ const skillObserver = new IntersectionObserver(
 
 if (skillSection) skillObserver.observe(skillSection);
 
-/*Active nav link highlight on scroll  */
+/* Active nav link highlight on scroll  */
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
